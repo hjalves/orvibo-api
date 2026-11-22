@@ -1,0 +1,19 @@
+version = 1
+revision = 5
+requires-python = ">=3.14"
+
+[[package]]
+name = "orvibo"
+version = "1.1.2"
+source = { git = "https://github.com/hjalves/python-orvibo.git#601c058c00e052b81b6956bb063524a451f7432c" }
+
+[[package]]
+name = "orvibo-api"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "orvibo" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "orvibo", git = "https://github.com/hjalves/python-orvibo.git" }]

@@ -1,0 +1,19 @@
+[project]
+name = "orvibo-api"
+version = "0.1.0"
+description = "Control the Orvibo S20 through an API"
+readme = "README.md"
+authors = [
+    { name = "Humberto Alves", email = "hjalves@live.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "orvibo @ git+https://github.com/hjalves/python-orvibo.git"
+]
+
+[project.scripts]
+orvibo-api = "orvibo_api:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
