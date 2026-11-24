@@ -8,7 +8,7 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
-    "orvibo @ git+https://github.com/hjalves/python-orvibo.git"
+    "orvibo==1.1.2"
 ]
 
 [project.scripts]
